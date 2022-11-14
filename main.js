@@ -1,8 +1,9 @@
 /*================== IMPORTAÇÕES =================*/
 import './includes/libs/jquery_3.6.1'
 import './semantic/dist/semantic.css'
-// import './semantic/dist/semantic.js'
+import './semantic/dist/semantic.js'
 import './includes/libs/tippy'
+import './includes/libs/prism'
 import './includes/styles/style.css'
 
 /*================== CONTEÚDO DO APP =================*/
@@ -22,6 +23,8 @@ document.querySelector('#app').innerHTML = `
     <div class="line"></div>
   </div>
 </div>
+
+<pre><code class="language-css">p { color: red }</code></pre>
 `
 
 /*================== EVENTOS =================*/
