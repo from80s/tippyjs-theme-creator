@@ -1,4 +1,32 @@
-import './style.css'
+/*================== IMPORTAÇÕES =================*/
+import './includes/libs/jquery_3.6.1'
+import './semantic/dist/semantic.css'
+// import './semantic/dist/semantic.js'
+import './includes/libs/tippy'
+import './includes/styles/style.css'
 
-document.querySelector('#app').innerHTML = `  
+/*================== CONTEÚDO DO APP =================*/
+document.querySelector('#app').innerHTML = `
+    <button id="myButton">My button</button>
+
+    <div class="ui placeholder">
+  <div class="image header">
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="paragraph">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
 `
+
+/*================== EVENTOS =================*/
+window.addEventListener('load', () => {
+    tippy('#myButton', {
+        content: 'My tooltip!',
+      });
+})
